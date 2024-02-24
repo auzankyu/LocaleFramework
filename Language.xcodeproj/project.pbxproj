@@ -3,15 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F9C02B0F4FDF0175F471F7F /* Pods_Language.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B248A33C4AAA67612DDCC9A2 /* Pods_Language.framework */; };
+		7451DA38DA34B09264BBF6CD /* Pods_Language_LanguageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5CF9A011ACBDC2828C85A6 /* Pods_Language_LanguageTests.framework */; };
 		B9A10D962B89814B00A27734 /* Language.docc in Sources */ = {isa = PBXBuildFile; fileRef = B9A10D952B89814B00A27734 /* Language.docc */; };
 		B9A10D9C2B89814B00A27734 /* Language.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A10D912B89814B00A27734 /* Language.framework */; };
 		B9A10DA12B89814B00A27734 /* LanguageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A10DA02B89814B00A27734 /* LanguageTests.swift */; };
 		B9A10DA22B89814B00A27734 /* Language.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A10D942B89814B00A27734 /* Language.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9A10DAC2B89815200A27734 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A10DAB2B89815200A27734 /* Language.swift */; };
+		B9A10DB02B89CDC700A27734 /* LanguageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A10DAF2B89CDC700A27734 /* LanguageUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,12 +28,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		376E8E1C7C97F6F9CA2C1624 /* Pods-Language-LanguageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Language-LanguageTests.release.xcconfig"; path = "Target Support Files/Pods-Language-LanguageTests/Pods-Language-LanguageTests.release.xcconfig"; sourceTree = "<group>"; };
+		5CCBAF7169D1C94DCED56E4F /* Pods-Language.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Language.debug.xcconfig"; path = "Target Support Files/Pods-Language/Pods-Language.debug.xcconfig"; sourceTree = "<group>"; };
+		7A5CF9A011ACBDC2828C85A6 /* Pods_Language_LanguageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Language_LanguageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD470E6485118292F4FDCA9 /* Pods-Language-LanguageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Language-LanguageTests.debug.xcconfig"; path = "Target Support Files/Pods-Language-LanguageTests/Pods-Language-LanguageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A6B349CC47CB5761E4C2019 /* Pods-Language.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Language.release.xcconfig"; path = "Target Support Files/Pods-Language/Pods-Language.release.xcconfig"; sourceTree = "<group>"; };
+		B248A33C4AAA67612DDCC9A2 /* Pods_Language.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Language.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A10D912B89814B00A27734 /* Language.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Language.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A10D942B89814B00A27734 /* Language.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Language.h; sourceTree = "<group>"; };
 		B9A10D952B89814B00A27734 /* Language.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Language.docc; sourceTree = "<group>"; };
 		B9A10D9B2B89814B00A27734 /* LanguageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanguageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A10DA02B89814B00A27734 /* LanguageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTests.swift; sourceTree = "<group>"; };
 		B9A10DAB2B89815200A27734 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		B9A10DAF2B89CDC700A27734 /* LanguageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9C02B0F4FDF0175F471F7F /* Pods_Language.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,18 +57,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9A10D9C2B89814B00A27734 /* Language.framework in Frameworks */,
+				7451DA38DA34B09264BBF6CD /* Pods_Language_LanguageTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DED00CFC5CC4A5F5F59AD04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CCBAF7169D1C94DCED56E4F /* Pods-Language.debug.xcconfig */,
+				9A6B349CC47CB5761E4C2019 /* Pods-Language.release.xcconfig */,
+				8CD470E6485118292F4FDCA9 /* Pods-Language-LanguageTests.debug.xcconfig */,
+				376E8E1C7C97F6F9CA2C1624 /* Pods-Language-LanguageTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B9A10D872B89814B00A27734 = {
 			isa = PBXGroup;
 			children = (
 				B9A10D932B89814B00A27734 /* Language */,
 				B9A10D9F2B89814B00A27734 /* LanguageTests */,
 				B9A10D922B89814B00A27734 /* Products */,
+				9DED00CFC5CC4A5F5F59AD04 /* Pods */,
+				BC35D30878AA499E896A2F06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +101,7 @@
 				B9A10D942B89814B00A27734 /* Language.h */,
 				B9A10D952B89814B00A27734 /* Language.docc */,
 				B9A10DAB2B89815200A27734 /* Language.swift */,
+				B9A10DAF2B89CDC700A27734 /* LanguageUtils.swift */,
 			);
 			path = Language;
 			sourceTree = "<group>";
@@ -86,6 +112,15 @@
 				B9A10DA02B89814B00A27734 /* LanguageTests.swift */,
 			);
 			path = LanguageTests;
+			sourceTree = "<group>";
+		};
+		BC35D30878AA499E896A2F06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B248A33C4AAA67612DDCC9A2 /* Pods_Language.framework */,
+				7A5CF9A011ACBDC2828C85A6 /* Pods_Language_LanguageTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,6 +141,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9A10DA52B89814B00A27734 /* Build configuration list for PBXNativeTarget "Language" */;
 			buildPhases = (
+				E8D3F3E086D6AD082FE4D911 /* [CP] Check Pods Manifest.lock */,
 				B9A10D8C2B89814B00A27734 /* Headers */,
 				B9A10D8D2B89814B00A27734 /* Sources */,
 				B9A10D8E2B89814B00A27734 /* Frameworks */,
@@ -124,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9A10DA82B89814B00A27734 /* Build configuration list for PBXNativeTarget "LanguageTests" */;
 			buildPhases = (
+				098CDDE285A59F1146446784 /* [CP] Check Pods Manifest.lock */,
 				B9A10D972B89814B00A27734 /* Sources */,
 				B9A10D982B89814B00A27734 /* Frameworks */,
 				B9A10D992B89814B00A27734 /* Resources */,
+				99021CB02A817CDD6FBB2400 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,7 +195,7 @@
 				};
 			};
 			buildConfigurationList = B9A10D8B2B89814B00A27734 /* Build configuration list for PBXProject "Language" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -192,6 +230,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		098CDDE285A59F1146446784 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Language-LanguageTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99021CB02A817CDD6FBB2400 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Language-LanguageTests/Pods-Language-LanguageTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Language-LanguageTests/Pods-Language-LanguageTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Language-LanguageTests/Pods-Language-LanguageTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8D3F3E086D6AD082FE4D911 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Language-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B9A10D8D2B89814B00A27734 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -199,6 +301,7 @@
 			files = (
 				B9A10D962B89814B00A27734 /* Language.docc in Sources */,
 				B9A10DAC2B89815200A27734 /* Language.swift in Sources */,
+				B9A10DB02B89CDC700A27734 /* LanguageUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +451,7 @@
 		};
 		B9A10DA62B89814B00A27734 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CCBAF7169D1C94DCED56E4F /* Pods-Language.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -379,6 +483,7 @@
 		};
 		B9A10DA72B89814B00A27734 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A6B349CC47CB5761E4C2019 /* Pods-Language.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -410,6 +515,7 @@
 		};
 		B9A10DA92B89814B00A27734 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CD470E6485118292F4FDCA9 /* Pods-Language-LanguageTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -427,6 +533,7 @@
 		};
 		B9A10DAA2B89814B00A27734 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 376E8E1C7C97F6F9CA2C1624 /* Pods-Language-LanguageTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

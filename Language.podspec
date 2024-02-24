@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "Language"
-  spec.version      = "0.0.1"
+  spec.version      = "1.0.3"
   spec.summary      = "#{spec.name} framework."
   spec.description  = "Description for #{spec.name} framework."
   spec.homepage     = "http://EXAMPLE/Language"
@@ -17,11 +17,12 @@ Pod::Spec.new do |spec|
   spec.author       = { "Auzan" => "" }
   spec.platform     = :ios, "11.0"
   # spec.source       = { :path => '.' }
-  spec.source       = { :git => "https://github.com/auzankyu/LocaleFramework.git", :tag => "1.0.2" }
+  spec.source       = { :git => "https://github.com/auzankyu/LocaleFramework.git", :branch => "main" }
   spec.source_files = "Language/**/*.swift"
-  spec.resources    = ["Language/**/*.xib", "Language/**/*.storyboard", "Language/**/*.ttf"]
+  # spec.resources    = ["Language/**/*.xib", "Language/**/*.storyboard", "Language/**/*.ttf"]
   spec.resource_bundles = {
-    'Language' => ["Language/*.xcassets", "Language/**/*.xcassets"]
+    'Language' => ["Language/*.xcassets", "Language/**/*.xcassets", "Language/**/*.json"]
   }
+  spec.dependency 'i18next'
 
 end
